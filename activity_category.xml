@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/headingdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Booking Details"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headingdetails"
+            android:layout_alignLeft="@+id/headingdetails"
+            android:layout_alignStart="@+id/headingdetails"
+            android:layout_marginTop="20dp"
+            android:text="*Choose Category:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"/>
+        <RadioGroup
+            android:id="@+id/choosecategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/withfuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="With Fuel"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_below="@+id/category"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioButton
+                android:id="@+id/withoutfuel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Without Fuel"
+                android:textStyle="normal"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:layout_below="@+id/withfuel"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/availiblepack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/categoryval"
+            android:text="Availible Packages:"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/availiblepackhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*With Fuel"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/wfavailiblepack"
+            android:layout_width="403dp"
+            android:layout_height="210dp">
+
+            <RadioButton
+                android:id="@+id/availiblepackone"
+                android:layout_width="312dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="No.Of.Hours:1hr Price:69rs No.Of.Km:10Km"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/availiblepacktwo"
+                android:layout_width="312dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="No.Of.Hours:2hr Price:139rs No.Of.Km:20Km"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/availiblepackthree"
+                android:layout_width="312dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="No.Of.Hours:3hr Price:209rs No.Of.Km:30Km"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/availiblepackfour"
+                android:layout_width="312dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="No.Of.Hours:4hr Price:279rs No.Of.Km:40Km"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/availiblepackheadtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Without Fuel"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/wofavailiblepack"
+            android:layout_width="403dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center">
+            <RadioButton
+                android:id="@+id/wofavailiblepackone"
+                android:layout_width="312dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="No.Of.Hours:8hr Price:240rs No.Of.Km:70Km"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+
+            <RadioButton
+                android:id="@+id/wofavailiblepacktwo"
+                android:layout_width="312dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="No.Of.Hours:12hr Price:360rs No.Of.Km:100Km"
+                android:textSize="15dp"
+                android:textStyle="normal"/>
+
+            <RadioButton
+                android:id="@+id/wofavailiblepackthree"
+                android:layout_width="312dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="No.Of.Hours:24hr Price:399rs No.Of.Km:180Km"
+                android:textSize="15dp"
+                android:textStyle="normal"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/fromdate"
+            android:layout_width="338dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/wofavailiblepack"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight=".5"
+            android:ems="10"
+            android:hint="PickUp Date Time"
+            android:inputType="date"
+            android:paddingLeft="5dp" />
+
+        <EditText
+            android:id="@+id/todate"
+            android:layout_width="338dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/fromdate"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight=".5"
+            android:ems="10"
+            android:hint="DropOff Date Time"
+            android:inputType="date"
+            android:paddingLeft="5dp" />
+        <TextView
+            android:id="@+id/deliveryinstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Extra 30rs Charge Will Be Handled If Pickup point is around 3km from default Or Extra 10rs For 1Km"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_below="@+id/todate"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/pickuppoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Pickup Point"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/deliveryinstruction"/>
+        <RadioGroup
+            android:id="@+id/choosepickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/vaddeswaram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vivekananda Boys Hostel Opp Vaddeswaram Bridge"
+                android:textColor="#000000"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:layout_below="@+id/pickuppoint"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+            <RadioButton
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:textColor="#000000"
+                android:textStyle="normal"
+                android:textSize="15dp"
+                android:layout_below="@+id/vaddeswaram"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/pickupaddress"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/other"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:hint="Please Mention Address Here" />
+
+        <TextView
+            android:id="@+id/amounthead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount To Be Paid:"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/pickupaddress"/>
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/amounthead"/>
+        <TextView
+            android:id="@+id/deliverychargeinstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Delivery Charges Are Not Included In The Payment They Will Be Charged Seperately Based On The Distance Of Delivey"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/amount"/>
+
+        <TextView
+            android:id="@+id/paymenthead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choosepickup"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:text="*Payment:"
+            android:textColor="#000000"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <RadioButton
+            android:id="@+id/payment"
+            android:layout_width="139dp"
+            android:layout_height="43dp"
+            android:layout_below="@+id/todate"
+            android:layout_toRightOf="@+id/paymenthead"
+            android:text="Pay On Cash"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:background="#FFF54F08"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:onClick="next"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

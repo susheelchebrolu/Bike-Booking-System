@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="20sp"
+        android:paddingLeft="15dp"
+        android:text="Login"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/mobilehead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="65dp"
+        android:text="Mobile:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <EditText
+        android:id="@+id/mobile"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobilehead"
+        android:layout_alignStart="@+id/mobilehead"
+        android:layout_alignLeft="@+id/mobilehead"
+        android:layout_marginStart="-9dp"
+        android:layout_marginLeft="-9dp"
+        android:layout_marginTop="12dp"
+        android:inputType="number"
+        android:paddingLeft="15dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/etpassword"
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="242dp"
+        app:passwordToggleDrawable="@drawable/icon_selector"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="342dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile"
+            android:layout_alignStart="@+id/mobile"
+            android:layout_alignLeft="@+id/mobile"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginBottom="9dp"
+            android:layout_gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpassword"
+        android:layout_alignLeft="@+id/mobilehead"
+        android:layout_alignStart="@+id/mobilehead"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="34dp"
+        android:onClick="login"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="#FFF54F08"/>
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etpassword"
+        android:layout_marginLeft="78dp"
+        android:layout_marginTop="34dp"
+        android:layout_toEndOf="@+id/login"
+        android:layout_toRightOf="@+id/login"
+        android:onClick="signup"
+        android:text="SignUp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:background="#FFF54F08"/>
+
+
+</RelativeLayout>
